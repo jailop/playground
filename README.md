@@ -70,6 +70,13 @@ selected file contained in the `public` folder. As examples, a couple of
 
 ## Web user interface
 
+To open the user interface, use the following address in your browser:
+
+    http://localhost:8080
+    
+You can replace `localhost` with the IP address of your computer if you
+want access it from any other device in you network.
+
 ![](./screenshot.png)
 
 The user interface is defined in the files contained in the `static`

@@ -73,7 +73,7 @@ proc callback(req: Request) {.async, gcsafe.} =
 proc main(port: int) {.async.} =
   var server = newAsyncHttpServer()
   server.listen(Port(port))
-  echo "Server running at http://localhost:" & $port &
+  echo "Server running at http://0.0.0.0:" & $port &
       " (Ctrl+C to shut it down)"
   while true:
     if server.shouldAcceptRequest():
