@@ -1,0 +1,34 @@
+async function loadFile(filename) {
+    let url = `/file/${filename}`;
+    let resp = await fetch(url);
+    if (!resp.ok) {
+        throw new Error(`File loading error: ${resp.status}`)
+    }
+    const data = await resp.text();
+    const codeTxt = document.getElementById("code-txt")
+    codeTxt.text = data;
+}
+
+function populateListOfFiles(data) {
+    const fileList = document.getElementById("file-lst");
+    console.log(fileList);
+    for (const filename of data) {
+        const li = document.createElement("li");
+        li.className = "list-group-item"
+        li.addEventListener("click", (evt) => {
+            loadFile(filename)
+        });
+        fileList.appendChild(li);
+    }
+}
+
+async function updateFileList() {
+    let resp = await fetch("/list")
+    if (!resp.ok) {
+        throw new Error(`http error: ${resp.status}`);
+    }
+    const data = await resp.json();
+    console.log(data);
+}
+
+updateFileList();

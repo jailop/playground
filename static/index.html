@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Playground</title>
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container mt-4">
+            <div class="col">
+                <h1 class="text-center">Playground</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <div class="card-header">Ejemplos</div>
+                    <ul id="file-lst" class="list-group list-group-flush"></ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card mb-3">
+                    <div class="card-header d-flex
+                                justify-content-between align-items-center">
+                        Editor de códito
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button"
+                                class="btn btn-success"
+                                id="run-btn">Run</button>
+                        <button type="button"
+                                class="btn btn-danger"
+                                id="clear-btn">Clear</button>
+                    </div>
+                    <div class="card-body p-0">
+                        <textarea class="form-control code-box
+                                         rounded-0"
+                                  id="code-txt"
+                                  placeholder="Write your code..."></textarea>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Output</div>
+                        <div class="card-body p-0">
+                            <textarea class="form-control output-box
+                                             rounded-0"
+                                      id="output-txt"
+                                      readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="/static/script.js"></script>
+</html>

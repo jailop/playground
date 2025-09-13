@@ -1,0 +1,8 @@
+.code-box, .output-box {
+    min-height: 400px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f8f9fa;
+}
+.code-box {
+    resize: vertical;
+}
