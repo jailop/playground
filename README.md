@@ -13,8 +13,7 @@ The application has the following components:
 * The server. A binary executable written in Nim
 * The basic web user interface contained in the folder `static`
 * A folder to put files to be loaded as examples: `public`
-* A script that contains the code you'be running in the background, and
-  intended to be edited by you: `run.sh`
+* A script that contains the code you'll be running in the background: `run.sh`
 
 A distributable package is available in the releases section for
 linux-x64_86 and windows-x64_86. Just download that package and
