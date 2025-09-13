@@ -2,8 +2,8 @@
 
 This application is intended to provide a web user interface with a
 simple code editor and an output box to run code in the backend server.
-It can also load a list of examples that you provide ready to edit or
-run. This tool has been built with educative purposes. It is not
+It can also load a list of examples that you can provide ready to edit or
+run. This tool has been built for educative purposes. It is not
 intended to be used in a production environment.
 
 ## Components
