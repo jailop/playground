@@ -21,10 +21,11 @@ linux-x64_86 and windows-x64_86. Just download that package and
 uncompress it in your local system.
 
 Otherwise, you can clone this repository. It is required that you have
-`nim` version 2.2 installed in your system. To generate the binary for
-the server:
+`nim` version 2.2 installed in your system.
 
 ```sh
+git clone https://github.com/jailop/playground.git
+cd playground
 nimble build
 ```
 
