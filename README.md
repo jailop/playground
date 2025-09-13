@@ -95,4 +95,4 @@ The user interface contains the following components:
 
 You're invited to customize the user interface. Just keep the
 relationship between the `id` attributes in the `index.html` file and
-the objectecs in the `script.js` file.
+the objects in the `script.js` file.
