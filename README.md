@@ -13,7 +13,8 @@ The application has the following components:
 * The server. A binary executable written in Nim
 * The basic web user interface contained in the folder `static`
 * A folder to put files to be loaded as examples: `public`
-* A script that contains the code you'll be running in the background: `run.sh`
+* A script that contains the code you'll be running in the background:
+  `run.sh` or `run.bat` (for Windows)
 
 A distributable package is available in the releases section for
 linux-x64_86 and windows-x64_86. Just download that package and
@@ -31,7 +32,8 @@ nimble build
 
 When the server receives the edited content from the user interface, it
 saves that content a file named `input.txt`. The script `run.sh` should
-make use of that file to produce the desired output.
+make use of that file to produce the desired output. In Windows, the
+program will look for a scrpt named `run.bat`.
 
 In the following example, the file `input.txt` is copied as a `C` file
 and compiled. The program is run in the as the last step, the produced
