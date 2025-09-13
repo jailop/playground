@@ -37,7 +37,7 @@ should make use of that file to produce the desired output. In Windows,
 the program will look for a scrpt named `run.bat`.
 
 In the following example, the file `input.txt` is copied as a `C` file
-and compiled. The program is run and the as the last step, the produced
+and compiled. The program is run and then as the last step, the produced
 files are removed.
 
 ```sh
